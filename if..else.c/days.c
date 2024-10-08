@@ -12,8 +12,10 @@ int main() {
 	int days_overdue;
 	float finerate;
 	float fineamount;
+	
 	//calculate days over due
-	'days overdue=Return_date - due_date';
+	days_overdue = Return_Date - due_date;
+	
 	
 	printf("Enter Book ID: ");
 	scanf("%d", &Book_ID);
@@ -23,6 +25,9 @@ int main() {
 	
 	printf("Enter Return Date: ");
 	scanf("%d", &Return_Date);
+	
+	
+
 	
 	if (days_overdue <= 0) {finerate = 0.0;
 	}
@@ -43,11 +48,15 @@ int main() {
 	//calculate fine amount
 	fineamount = finerate * days_overdue;
 	
+	
+	printf("\n--calculation of days overdue--\n");
+	printf("Days overdue %d", days_overdue);
 	printf("\n--- fine calculation ---\n");
 	printf("Book ID: %d\n", Book_ID);
 	printf("Due Date: %d\n", due_date);
 	printf("Return Date: %d", Return_Date);
 	printf("Fine Rate: $%.2f per day\n", finerate);
+	printf("Fine amount %lf", fineamount);
 	
 	return 0;
 }
