@@ -16,17 +16,20 @@ int main () {
 	
 	
 	printf("Enter time\n: ");
+		scanf("%d", &time);
 	printf("Enter rate\n: ");
+	    scanf("%f", &rate);
 	printf("Enter amount\n: ");
-	printf("Enter simple intrest\n: ");
+		scanf("%lf", &amount);
+	
 	//calculate simple intrest
-	simpleintrest = (amount * time * rate)/100;
+	simpleintrest = amount * time * rate/100;
 	
 	
-	scanf("%d", &time);
-	scanf("%f", &rate);
-	scanf("%lf", &amount);
-	scanf("%lf", &simpleintrest);
+
+	
+
+	
 	
 	
 	
